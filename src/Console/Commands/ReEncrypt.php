@@ -4,7 +4,7 @@
  *
  * @author del
  */
-namespace Delatbabel\Elocrypt\Console\Commands;
+namespace Involix\Elocrypt\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Encryption\Encrypter;
