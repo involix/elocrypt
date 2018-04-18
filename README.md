@@ -78,7 +78,7 @@ application's `config/app.php` file:
 ```php
     'providers' => [
         ...
-        Delatbabel\Elocrypt\ElocryptServiceProvider::class,
+        Involix\Elocrypt\ElocryptServiceProvider::class,
     ],
 ```
 
@@ -88,7 +88,7 @@ application's `config/app.php` file:
 Publish the config file with:
 
 ```
-    php artisan vendor:publish --provider='Delatbabel\Elocrypt\ElocryptServiceProvider'
+    php artisan vendor:publish --provider='Involix\Elocrypt\ElocryptServiceProvider'
 ```
 
 You may then change the default prefix tag string in your `.env` config file:
