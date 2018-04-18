@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Delatbabel\\Elocrypt\\": "src/"
+            "Involix\\Elocrypt\\": "src/"
         }
     },
     "minimum-stability": "stable"
