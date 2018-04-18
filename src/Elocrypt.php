@@ -96,7 +96,7 @@ trait Elocrypt
      *
      * @return bool
      */
-    protected function isEncrypted($value)
+    public function isEncrypted($value)
     {
         return strpos((string) $value, $this->getElocryptPrefix()) === 0;
     }
@@ -140,10 +140,13 @@ trait Elocrypt
      */
     protected function doEncryptAttribute($key)
     {
-        if ($this->shouldEncrypt($key) && ! $this->isEncrypted($this->attributes[$key])) {
+        if ( $this->shouldEncrypt($key) && ! $this->isEncrypted($this->attributes[$key]) ) {
             try {
-                $this->attributes[$key] = $this->encryptedAttribute($this->attributes[$key]);
+                if ( $this->attributes[$key] != null ) {
+                    $this->attributes[$key] = $this->encryptedAttribute($this->attributes[$key]);
+                }
             } catch (EncryptException $e) {
+                //
             }
         }
     }
