@@ -2,7 +2,7 @@
 /**
  * Trait Elocrypt.
  */
-namespace Involix\Elocrypt55;
+namespace Involix\Elocrypt;
 
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\EncryptException;
@@ -59,7 +59,7 @@ use Illuminate\Support\Facades\Crypt;
  * @see Illuminate\Encryption\Encrypter
  * @link http://laravel.com/docs/5.1/eloquent
  */
-trait Elocrypt
+trait Elocrypt55
 {
     //
     // Methods below here are native to the trait.
