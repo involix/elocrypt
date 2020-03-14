@@ -1,9 +1,4 @@
-# Eloquent Encryption/Decryption for Laravel 5
-
-[![Build Status](https://travis-ci.org/delatbabel/elocryptfive.png?branch=master)](https://travis-ci.org/delatbabel/elocryptfive)
-[![StyleCI](https://styleci.io/repos/42222272/shield)](https://styleci.io/repos/42222272)
-[![Latest Stable Version](https://poser.pugx.org/delatbabel/elocryptfive/version.png)](https://packagist.org/packages/ddpro/elocryptfive)
-[![Total Downloads](https://poser.pugx.org/delatbabel/elocryptfive/d/total.png)](https://packagist.org/packages/delatbabel/elocryptfive)
+# Eloquent Encryption/Decryption for Laravel 7
 
 Automatically encrypt and decrypt Laravel 5 Eloquent values.
 
@@ -62,7 +57,7 @@ This package can be installed via Composer by adding the following to your `comp
 
 ```
     "require": {
-        "delatbabel/elocryptfive": "~1.0"
+        "involix/elocryptfive": "~1.7"
     }
 ```
 
@@ -113,7 +108,7 @@ an `$encrypts` array containing a list of the attributes to encrypt.
 For example:
 
 ```php
-    use Delatbabel\Elocrypt\Elocrypt;
+    use Involix\Elocrypt\Elocrypt;
 
     class User extends Eloquent {
 
