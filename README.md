@@ -34,7 +34,7 @@ not but will be automatically encrypted when it is saved back into those columns
 
 ## Contributors
 
-This is Darren Taylor's Laravel 4 "elocrypt" package, ported to Laravel 7. 
+This is Darren Taylor's Laravel 4 "elocrypt" package, ported to Laravel 7 by Eugene Cooper. 
 
 Thanks to Brandon Surowiec for some extensive refactoring of the internal methods.
 
@@ -44,7 +44,7 @@ This package can be installed via Composer by adding the following to your `comp
 
 ```
     "require": {
-        "involix/elocryptfive": "~1.7.1"
+        "involix/elocryptfive": "~1.7.2"
     }
 ```
 
@@ -76,14 +76,14 @@ Publish the config file with:
 You may then change the default prefix tag string in your `.env` config file:
 
 ```
-    ELOCRYPT_PREFIX=__This_is_encrypted_data__
+    ELOCRYPT_PREFIX=__encrypted__
 ```
 
 or alternatively you can change the default right in the `config/elocrypt.php` file:
 
 ```php
     return [
-        'prefix' => env('ELOCRYPT_PREFIX', '__This_is_encrypted_data__')
+        'prefix' => env('ELOCRYPT_PREFIX', '__encrypted__')
     ]
 ```
 
@@ -118,7 +118,7 @@ and then encrypted.
 For example:
 
 ```php
-    use Delatbabel\Elocrypt\Elocrypt;
+    use Involix\Elocrypt\Elocrypt;
 
     class User extends Eloquent {
 
@@ -140,7 +140,7 @@ and either encrypts/decrypts it accordingly.
 ## Summary of Methods in Illuminate\Database\Eloquent\Model
 
 This surveys the major methods in the Laravel Model class as of
-Laravel v 5.1.12 and checks to see how those models set attributes
+Laravel v7 and checks to see how those models set attributes
 and hence how they are affected by this trait.
 
 * constructor -- calls fill()
