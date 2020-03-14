@@ -1,7 +1,7 @@
 {
-    "name": "involix/elocryptfive",
+    "name": "involix/elocryptseven",
     "description": "Automatically encrypt and decrypt Eloquent attributes with ease.",
-    "keywords": ["encrypt", "elocrypt", "eloquent", "l5", "laravel", "laravel5", "encryption", "eloquent encryption", "laravel5 encryption", "laravel5 aes", "eloquent aes"],
+    "keywords": ["encrypt", "elocrypt", "eloquent", "l5", "laravel", "laravel7", "encryption", "eloquent encryption", "laravel7 encryption", "laravel7 aes", "eloquent aes"],
     "license": "MIT",
     "authors": [
         {
@@ -11,16 +11,20 @@
         {
             "name": "Darren Taylor",
             "email": "shout@darrenonthe.net"
+        },
+           {
+            "name": "Eugene Cooper",
+            "email": "jaycooper1988@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.6.0",
-        "illuminate/contracts": "^5.0",
-        "illuminate/support": "^5.0",
-        "illuminate/encryption": "^5.0",
-        "illuminate/container": "^5.0",
-        "illuminate/config": "^5.0",
-        "illuminate/console": "^5.0",
+        "php": ">=7.0.0",
+        "illuminate/contracts": "^7.0",
+        "illuminate/support": "^7.0",
+        "illuminate/encryption": "^7.0",
+        "illuminate/container": "^7.0",
+        "illuminate/config": "^7.0",
+        "illuminate/console": "^7.0",
         "paragonie/random_compat": "^1.1|^2.0"
     },
     "require-dev": {
