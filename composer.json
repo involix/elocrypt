@@ -1,6 +1,6 @@
 {
     "name": "involix/elocryptseven",
-    "description": "Automatically encrypt and decrypt Eloquent attributes with ease.",
+    "description": "Easily encrypt/decrypt Eloquent attributes in Laravel 7+",
     "keywords": ["encrypt", "elocrypt", "eloquent", "l5", "laravel", "laravel7", "encryption", "eloquent encryption", "laravel7 encryption", "laravel7 aes", "eloquent aes"],
     "license": "MIT",
     "authors": [
