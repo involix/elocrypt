@@ -1,13 +1,11 @@
-<?php
-/**
- * Trait Elocrypt.
- */
-namespace Involix\Elocrypt;
+<?php namespace Involix\Elocrypt;
+
 
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Contracts\Encryption\EncryptException;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Crypt;
+
 
 /**
  * Trait Elocrypt.
@@ -32,7 +30,7 @@ use Illuminate\Support\Facades\Crypt;
  * ### Summary of Methods in Illuminate\Database\Eloquent\Model
  *
  * This surveys the major methods in the Laravel Model class as of
- * Laravel v 5.1.12 and checks to see how those models set attributes
+ * Laravel v7 and checks to see how those models set attributes
  * and hence how they are affected by this trait.
  *
  * * __construct -- calls fill()
@@ -59,7 +57,7 @@ use Illuminate\Support\Facades\Crypt;
  * @see Illuminate\Encryption\Encrypter
  * @link http://laravel.com/docs/5.1/eloquent
  */
-trait Elocrypt55
+trait Elocrypt
 {
     //
     // Methods below here are native to the trait.
