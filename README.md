@@ -1,6 +1,6 @@
 # Eloquent Encryption/Decryption for Laravel 5/6/7/8
 
-Automatically encrypt and decrypt Laravel 7+ Eloquent values.
+Automatically encrypt and decrypt Laravel Eloquent values.
 
 ## READ THIS FIRST
 
