@@ -1,4 +1,4 @@
-# Eloquent Encryption/Decryption for Laravel 7+
+# Eloquent Encryption/Decryption for Laravel 5/6/7/8
 
 Automatically encrypt and decrypt Laravel 7+ Eloquent values.
 
@@ -27,14 +27,14 @@ not but will be automatically encrypted when it is saved back into those columns
 
 ## Requirements and Recommendations
 
-* Laravel 7+
+* Laravel 5+
 * PHP > 7
 * PHP [openssl extension](http://php.net/manual/en/book.openssl.php).
 * A working OpenSSL implementation on your OS.  OpenSSL comes pre-built with most Linux distributions and other forms of Unix such as *BSD.  There may or may not be a working OpenSSL implementation on a Windows system depending on how your LA?P stack was built.  I cannot offer support for installing or using ElocryptFive on systems that do not have an OpenSSL library.
 
 ## Contributors
 
-This is Darren Taylor's Laravel 4 "elocrypt" package, ported to Laravel 7 by Eugene Cooper. 
+This is Darren Taylor's Laravel 4 "elocrypt" package, ported to Laravel 6/7/8 by Eugene Cooper. 
 
 Thanks to Brandon Surowiec for some extensive refactoring of the internal methods.
 
@@ -44,7 +44,7 @@ This package can be installed via Composer by adding the following to your `comp
 
 ```
     "require": {
-        "involix/elocryptfive": "~1.7.2"
+        "involix/elocrypt": "^1.8"
     }
 ```
 
@@ -140,7 +140,7 @@ and either encrypts/decrypts it accordingly.
 ## Summary of Methods in Illuminate\Database\Eloquent\Model
 
 This surveys the major methods in the Laravel Model class as of
-Laravel v7 and checks to see how those models set attributes
+Laravel and checks to see how those models set attributes
 and hence how they are affected by this trait.
 
 * constructor -- calls fill()
